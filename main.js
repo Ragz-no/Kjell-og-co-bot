@@ -41,6 +41,8 @@ client.on("message", message => {
         client.commands.get("skjermproblemer").execute(message, args);
     } else if (command == "list") {
         client.commands.get("list").execute(message, args);
+    } else if (typeof command !== "undefined") {
+        message.channel.send("Kommando finnes ikke, bruk **!list** for å se alle kommandoer.");
     }
 
     //ID Tech support kjell server
@@ -49,11 +51,6 @@ client.on("message", message => {
     // } else {
     //     message.channel.send("Du er ikke admin");
     // };
-
-    if (typeof command !== "undefined") {
-        message.channel.send("Kommando finnes ikke, bruk **!list** for å se alle kommandoer.");
-    }
-  
 });
 
 
