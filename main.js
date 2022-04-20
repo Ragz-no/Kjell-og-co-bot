@@ -51,7 +51,7 @@ client.on("message", message => {
     // };
 
     if (typeof command !== "undefined") {
-        message.channel.send("Denne kommandoen finnes ikke");
+        message.channel.send("Kommando finnes ikke, bruk **!list** for å se alle kommandoer.");
     }
   
 });
