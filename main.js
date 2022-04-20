@@ -1,6 +1,6 @@
 //jshint esversion:6
 const Discord = require("discord.js");
-const config = require("config.json");
+const config = require("./config.json");
 
 const client = new Discord.Client({ intents: [
 "GUILDS", 
@@ -52,7 +52,7 @@ client.on("message", message => {
 
 
 
-// logger at botten er pålogget 
+// logger at botten er pålogget Kjell og co bot er pålogget
 client.once("ready", () => {
     console.log("Kjell og co bot er pålogget");
 });
