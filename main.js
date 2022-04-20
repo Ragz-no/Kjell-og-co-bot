@@ -43,6 +43,10 @@ client.on("message", message => {
         client.commands.get("list").execute(message, args);
     }
 
+    //ID Da boss personlig server
+    if (message.member.roles.cache.has("893114054023974932")){
+        client.commands.get("admin").execute(message, args);
+    };
   
 });
 
