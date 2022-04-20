@@ -1,4 +1,6 @@
 # Kjell-og-co-bot
+This is a discord bot that can help your server with technical problems.
+
 
 ## Discord bot invite link
 https://discord.com/oauth2/authorize?client_id=966225683728715857&permissions=0&scope=bot
