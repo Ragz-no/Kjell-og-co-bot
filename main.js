@@ -1,6 +1,7 @@
 //jshint esversion:6
 const Discord = require("discord.js");
 const config = require("./config.json");
+// const Scraper = require("images-scraper"); https://www.youtube.com/watch?v=GYUc46XPlEI
 
 const client = new Discord.Client({ intents: [
 "GUILDS", 
