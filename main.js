@@ -43,10 +43,16 @@ client.on("message", message => {
         client.commands.get("list").execute(message, args);
     }
 
-    //ID Da boss personlig server
-    if (message.member.roles.cache.has("893114054023974932")){
-        client.commands.get("admin").execute(message, args);
-    };
+    //ID Tech support kjell server
+    // if (message.member.roles.cache.has("925098318596562984")){
+    //     client.commands.get("admin").execute(message, args);
+    // } else {
+    //     message.channel.send("Du er ikke admin");
+    // };
+
+    if (typeof command !== "undefined") {
+        message.channel.send("Denne kommandoen finnes ikke");
+    }
   
 });
 
